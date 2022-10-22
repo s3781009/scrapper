@@ -9,5 +9,5 @@ app = Flask(__name__)
 def hello_world():
     search = request.args.get("search")
     country = request.args.get("country")
-    html = getPriceHistoryPage(searchText=search, country=country)
-    return html
+    res = getPriceHistoryPage(searchText=search, country=country)
+    return res

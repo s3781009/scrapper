@@ -1,8 +1,9 @@
 import json
+from datetime import date
 
 
 class Item:
-    def __init__(self, date, price):
+    def __init__(self, date: str, price: float):
         self.date = date
         self.price = price
 
